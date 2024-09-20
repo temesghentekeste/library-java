@@ -5,13 +5,13 @@ import java.util.Set;
 
 public class Library {
     /*
-    Create a class Library that contains:
-    A Map<User, Set<Book>> to track which users have borrowed which books.
-    A Map<User, Set<Book>> to track which users have borrowed which books.
-Features to Implement:
--Add a Book: Allow the library to add a book to a user's borrowed list.
--Remove a Book: Allow the library to remove a book from a user's borrowed list.
--List User's Borrowed Books: Given a user, list all the books they have borrowed.
+        Create a class Library that contains:
+        A Map<User, Set<Book>> to track which users have borrowed which books.
+        A Map<User, Set<Book>> to track which users have borrowed which books.
+        Features to Implement:
+        -Add a Book: Allow the library to add a book to a user's borrowed list.
+        -Remove a Book: Allow the library to remove a book from a user's borrowed list.
+        -List User's Borrowed Books: Given a user, list all the books they have borrowed.
      */
     Map<User, Set<Book>> borrowedBooks;
 
