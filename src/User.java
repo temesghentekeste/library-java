@@ -12,10 +12,16 @@ borrowedBooks (Set<Book>)
     private String name;
     private Set<Book> borrowedBooks;
 
+    public User(String name) {
+        this.name = name;
+    }
+
     public User(String name, Set<Book> borrowedBooks) {
         this.name = name;
         this.borrowedBooks = borrowedBooks;
     }
+
+
 
     public String getName() {
         return name;

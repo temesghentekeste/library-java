@@ -28,13 +28,20 @@ Features to Implement:
             borrowedBooks.put(user, new HashSet<>());
         }
         borrowedBooks.get(user).add(book);
+        user.setBorrowedBooks(borrowedBooks.get(user));
     }
 
-    public void removeBook(User user, Book book) {
+    public boolean removeBook(User user, Book book) {
         if (borrowedBooks.containsKey(user)) {
             Set<Book> books = borrowedBooks.get(user);
             books.remove(book);
+            return true;
         }
+        return false;
+    }
+
+    public Set<Book> getUserBorrowedBooks(User user) {
+        return borrowedBooks.getOrDefault(user, new HashSet<>());
     }
 
 
